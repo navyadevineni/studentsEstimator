@@ -3,21 +3,42 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Student Estimator</title>
-  <meta name="description"
-  content="To calculate total number of students">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-  <link href="index.css" rel="stylesheet">
-  </head>
-  <body class="d-flex flex-column sticky-footer-wrapper">
+    <title>Student Estimator</title>
+    <meta name="description" content="To calculate total number of students">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column sticky-footer-wrapper">
     <main class="container-fluid  flex-fill">
-  
-      <div class="row">
-        <article id="i1" class="col-md-4 ">
-            <p>This is input1</p>
-           
-    
-  
+
+        <div class="row">
+            <article id="i1" class="col-md-4 ">
+                <p>This is input1</p>
+                <fieldset class="mt-2">
+                    <label for="inp1">Enter your first input (number):</label>
+                    <input v-model="inp1" id="input1" type="number" minlength="1" maxlength="100">
+                </fieldset>
+
+                <fieldset class="mt-2">
+                    <label for="inp2">Enter first number (1 to 100):</label>
+                    <input v-model="inp2" id="input2" type="number" min="1" max="100">
+                    <span id="Warning" class="text-danger"></span>
+                </fieldset>
+                <h3 class="mt-2">{{result}}</h3>
+            </article>
+        </div>
+
+    </main>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <span class="text-muted">Right-click / Inspect / Console</span>
+          &#9670;
+          <a href="https://navyadevineni.github.io/studentsEstimator/">Demo</a>
+          &#9670;
+          <a href="https://github.com/navyadevineni/studentsEstimator">Source</a>
+        </div>
+      </footer>
