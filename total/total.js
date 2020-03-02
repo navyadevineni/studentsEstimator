@@ -4,15 +4,15 @@ const total = new Vue({
   el: '#total',
   data: {
     inp1: 'countOfCourses',
-    inp2: 'averageOfCourses'
+    inp2: 'averageOfCourses',
     input1: 5,
     input2: 3
   },
   computed: {
     result: function () {
-      const i = parseInt(this.result1)
-      const j = parseInt(this.result2)
-      return `${this.}, your total is ${add(i, j)}.`
+      const i = parseInt(this.input1)
+      const j = parseInt(this.input2)
+      return `${this.}, your total is ${total(i, j)}.`
     }
   }
 })
