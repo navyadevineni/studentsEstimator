@@ -19,14 +19,19 @@
             <article id="total" class="col-md-4 ">
                 <p>This is input1</p>
                 <fieldset class="mt-2">
-                    <label for="inp">Enter your first input (number):</label>
-                    <input v-model="inp" id="input1" type="number" minlength="1" maxlength="100">
+                    <label for="guest">Enter your first input ():</label>
+                    <input v-model="guest" id="input1" type="number" minlength="1" maxlength="100">
                 </fieldset>
 
                 <fieldset class="mt-2">
-                    <label for="inp2">Enter first number (1 to 100):</label>
-                    <input v-model="inp2" id="input2" type="number" min="1" max="100">
+                    <label for="inp1">Enter first number (1 to 100):</label>
+                    <input v-model="inp1" id="input1" type="number" min="1" max="100">
                     <span id="Warning" class="text-danger"></span>
+                </fieldset>
+                <fieldset class="mt-2">
+                    <label for="inp2">Enter second number (1 to 100):</label>
+                    <input v-model="inp2" id="input2" type="number" min="1" max="100">
+                    <span id="secondWarning" class="text-danger"></span>
                 </fieldset>
                 <h3 class="mt-2">{{result}}</h3>
             </article>
@@ -35,10 +40,10 @@
     </main>
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
-          <span class="text-muted">Right-click / Inspect / Console</span>
-          &#9670;
-          <a href="https://navyadevineni.github.io/studentsEstimator/">Demo</a>
-          &#9670;
-          <a href="https://github.com/navyadevineni/studentsEstimator">Source</a>
+            <span class="text-muted">Right-click / Inspect / Console</span>
+            &#9670;
+            <a href="https://navyadevineni.github.io/studentsEstimator/">Demo</a>
+            &#9670;
+            <a href="https://github.com/navyadevineni/studentsEstimator">Source</a>
         </div>
-      </footer>
+    </footer>
