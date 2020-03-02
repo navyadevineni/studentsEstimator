@@ -12,7 +12,7 @@ const total = new Vue({
     result: function () {
       const i = parseInt(this.input1)
       const j = parseInt(this.input2)
-      return `${this.}, your total is ${total(i, j)}.`
+      return `${this.guest}, your total is ${total(i, j)}.`
     }
   }
 })
