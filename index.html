@@ -10,7 +10,7 @@
     <meta name="description" content="To calculate total number of students">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="index.css" rel="stylesheet">
-    <link href="components/total/total.css" rel="stylesheet">
+    <link href="total/total.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column sticky-footer-wrapper">
@@ -20,13 +20,13 @@
             <article id="total" class="col-md-4 ">
                 <p> This is to calculate the total </p>
                 <fieldset class="mt-2">
-                    <label for="inp1">Enter count of courses (1 to 100):</label>
-                    <input v-model="inp1" id="input1" type="number" min="1" max="100">
+                    <label for="input1">Enter count of courses (1 to 100):</label>
+                    <input v-model="input1" id="input1" type="number" min="1" max="100">
                     <span id="Warning" class="text-danger"></span>
                 </fieldset>
                 <fieldset class="mt-2">
-                    <label for="inp2">Enter average of courses (1 to 100):</label>
-                    <input v-model="inp2" id="input2" type="number" min="1" max="100">
+                    <label for="input2">Enter average of courses (1 to 100):</label>
+                    <input v-model="input2" id="input2" type="number" min="1" max="100">
                     <span id="secondWarning" class="text-danger"></span>
                 </fieldset>
                 <h3 class="mt-2">{{result}}</h3>
@@ -50,7 +50,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
-    <script src="components/total/total.js"></script>
+    <script src="./total/total.js"></script>
 </body>
 
 </html>
